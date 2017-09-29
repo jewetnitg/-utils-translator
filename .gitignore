@@ -1,0 +1,12 @@
+# ignored file types
+*.js
+*.map
+
+# ignored dirs
+dist/
+node_modules/
+.idea/
+
+# exceptions
+!src/test/preprocessor.js
+!wallaby.js

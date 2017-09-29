@@ -1,0 +1,44 @@
+{
+    "name": "@utils/translator",
+    "version": "0.0.0",
+    "description": "Utility for working with multiple languages",
+    "main": "dist/main/index.js",
+    "typings": "dist/main/index.d.ts",
+    "scripts": {
+        "test": "TEST_REPORT_FILENAME=dist/jest/test-report.xml node_modules/.bin/jest --no-cache --config jest.config.json",
+        "build": "node_modules/.bin/tsc",
+        "prepublishOnly": "npm test && node_modules/.bin/tsc"
+    },
+    "keywords": [
+        "translator",
+        "i18n",
+        "internationalization"
+    ],
+    "author": "Rik Hoffbauer",
+    "license": "ISC",
+    "dependencies": {
+        "lodash.get": "^4.4.2"
+    },
+    "peerDependencies": {
+        "react": "^16.0.0",
+        "react-addons-test-utils": "^15.6.2",
+        "react-dom": "^16.0.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^21.1.1",
+        "@types/node": "^8.0.30",
+        "@types/react": "^16.0.7",
+        "@types/react-addons-test-utils": "^0.14.20",
+        "@types/react-dom": "^15.5.5",
+        "@types/lodash.get": "^4.4.3",
+        "jest": "^21.2.1",
+        "jest-junit-reporter": "^1.1.0",
+        "typescript": "2.5.2"
+    },
+    "files": [
+        "dist",
+        ".nvmrc",
+        ".npmrc",
+        "yarn.lock"
+    ]
+}
