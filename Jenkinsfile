@@ -26,11 +26,5 @@ pipeline {
                 echo 'Deploying documentation....'
             }
         }
-        stage('Publish') {
-            steps {
-                echo 'Publishing....'
-                yarn publish --new-version 0.0.1-${env.BUILD_ID}
-            }
-        }
     }
 }
