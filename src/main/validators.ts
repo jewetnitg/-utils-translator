@@ -1,6 +1,6 @@
-import {TranslationMap} from "./Translator";
 import {LocaleReferenceError} from "./errors/LocaleReferenceError";
 import {TranslationReferenceError} from "./errors/TranslationReferenceError";
+import {TranslationMap} from "./Translator";
 
 export function validateLocaleIsDefined<Locale = string, Translations = {}>(locale: Locale, message: string = `Locale is not defined.`) {
     if (!locale) {

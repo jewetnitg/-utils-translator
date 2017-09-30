@@ -31,7 +31,7 @@ module.exports = function (w) {
 
         compilers: {
             '**/*.ts' : w.compilers.typeScript(),
-            '**/*.tsx' : w.compilers.typeScript()
+            '**/*.tsx': w.compilers.typeScript()
         }
     };
 };
